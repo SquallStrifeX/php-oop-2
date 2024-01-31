@@ -17,17 +17,16 @@ class Categoria {
     public $categoria;
     public $colore;
 
-    function __construct($categoria, $colore) {
+    function __construct($categoria) {
         $this->categoria = $categoria;
-        $this->colore = $colore;
     }
 }
 
 // Crea istanze di Categoria
-$cane = new Categoria('Cane', 'ColoreCane');
-$gatto = new Categoria('Gatto', 'ColoreGatto');
-$pesce = new Categoria('Pesce', 'ColorePesce');
-$uccello = new Categoria('Uccello', 'ColoreUccello');
+$cane = new Categoria('Cane');
+$gatto = new Categoria('Gatto');
+$pesce = new Categoria('Pesce');
+$uccello = new Categoria('Uccello');
 
 class Cibo extends Prodotto {
     // ... (resto del codice Cibo)
